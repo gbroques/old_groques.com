@@ -5,8 +5,8 @@
 @import "../../bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
 // endbower
 
+@import 'utils/module';
 @import 'base/module';
 @import 'components/module';
 @import 'layout/module';
 @import 'pages/module';
-@import 'utils/module';

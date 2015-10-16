@@ -5,4 +5,32 @@ $icon-font-path:        "../fonts/";
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
+// Breakpoints
+//~~~~~~~~~~~~~~~
+
+$small: 40.625em; // 650px
+$large: 60.25em; // 1000px
+
+
 // Colors
+//~~~~~~~~~
+
+// Neutral
+$off-white: #F5F7FA;
+$gray: #ecf0f1;
+$dark-gray: darken($gray, 6%);
+$silver: #95a5a6;
+
+// Blue
+$dark-blue: #2C3E50;
+$darker-blue: darken($dark-blue, 5%);
+$blue: lighten($dark-blue, 15%);
+$light-blue: lighten($dark-blue, 25%);
+
+// Red
+$light-red: lighten(#ED5565, 3%);
+$dark-red: lighten(#DA4453, 3%);
+
+// Green
+$light-green: #1ABC9C;
+$dark-green: #16A085;

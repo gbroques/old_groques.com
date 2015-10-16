@@ -1,0 +1,25 @@
+header {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(100, 100, 100, 0.3);
+  text-align: left;
+  z-index: 40;
+  height: 80px;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 2em;
+  font-family: 'Leckerli One', serif;
+  line-height: 80px;
+  margin-left: 5%;
+
+  @include breakpoint($large) {
+    margin-left: 50px;
+  }
+}
