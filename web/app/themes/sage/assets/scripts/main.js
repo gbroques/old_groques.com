@@ -19,6 +19,66 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+
+        /**
+         * Cache variables
+         */
+        var menu = document.querySelector(".mobile-nav");
+        var toggle = document.querySelector(".hamburger-menu");
+        var links = document.querySelectorAll(".mobile-nav-link");
+        var mask = document.createElement("div");
+        var activeClass = "is-active";
+
+        /**
+         * Create mask
+         */
+        mask.classList.add("mask");
+        document.body.appendChild(mask);
+
+        /**
+         * Listen for clicks on the toggle
+         */
+        toggle.addEventListener("click", function(e) {
+          e.preventDefault();
+          toggle.classList.contains(activeClass) ? deactivateMenu() : activateMenu();
+        });
+
+        /**
+         * Listen for clicks on the menu links, which should close the menu and mask
+         */
+
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener("click", function() {
+            deactivateMenu();
+          });
+        };
+
+        /**
+         * Listen for clicks on the mask, which should close the menu
+         */
+        mask.addEventListener("click", function() {
+          deactivateMenu();
+        });
+
+        /**
+         * Activate the menu 
+         */
+        function activateMenu() {
+          document.body.classList.add(activeClass);
+          menu.classList.add(activeClass);
+          toggle.classList.add(activeClass);
+          mask.classList.add(activeClass);
+        }
+
+        /**
+         * Deactivate the menu 
+         */
+        function deactivateMenu() {
+          document.body.classList.remove(activeClass);
+          menu.classList.remove(activeClass);
+          toggle.classList.remove(activeClass);
+          mask.classList.remove(activeClass);
+        }
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -28,6 +88,31 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+
+        // Hover function for work showcase
+        $(".frame").mouseenter(
+          function() {
+            $(".frame").not(this).stop(true, true).fadeTo(0, 0.4);
+            $(this).stop(true, true).fadeTo(0, 1);
+            $(this).css("box-shadow", "0 3px 6px rgba(0, 0, 0, 0.4)");
+          }
+        );
+        $(".frame").mouseleave(function(){
+          $(this).css("box-shadow", "0 2px 3px rgba(0, 0, 0, 0.3");
+        })
+        $("#work").mouseleave(function() {
+            $(".frame").fadeTo(0, 1);
+          }
+        );
+
+        // Smooth scroll for anchor links
+        var $root = $('html, body');
+        $('a').click(function() {
+          $root.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 500);
+          return false;
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
