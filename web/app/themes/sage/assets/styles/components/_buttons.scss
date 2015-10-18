@@ -1,0 +1,57 @@
+
+// Contact Form Button
+//~~~~~~~~~~~~~~~~~~~~~~~
+
+.btn {
+  padding: 25px 0;
+  font-size: 1em;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  background-color: #ff6a80;
+  box-shadow: 0px 3px 0px 0px #da0020;
+  transition: background 250ms ease-in-out;  
+
+  &:hover {
+    background-color: #ff566f;
+  }
+
+  &:active {
+    padding-top: 26px;
+    margin-bottom: -1px;
+    box-shadow: 0px 1px 0px 0px #da0020;
+  }
+}
+
+
+// Back to Top Button
+//~~~~~~~~~~~~~~~~~~~~~
+
+.back-to-top {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-top: 1px solid #BDC3C7;
+  margin: 0 auto -80px;
+  background-color: $dark-gray;
+  color: $off-white;
+  text-shadow: 0px 1px 1px rgba(100, 100, 100, 0.3);
+  transition: 150ms ease-in-out;
+
+  &:hover {
+    border-top: 1px solid $silver;
+    text-shadow: 0px 1px 2px rgba(75, 75, 75, 0.3);
+    color: #F5F7FA;
+  }
+}
+
+.icon-chevron-up {
+  font-size: 3em;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 20px;
+}

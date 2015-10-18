@@ -12,7 +12,6 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
   background-color: $gray;
   color: $dark-blue;
 }
@@ -70,4 +69,12 @@ textarea {
 
 textarea {
   resize: none;
+}
+
+section {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }

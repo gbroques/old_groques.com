@@ -1,3 +1,85 @@
+
+// Intro Text
+//~~~~~~~~~~~~~~
+
+.shadow {
+  color: $gray;
+  text-shadow: 3px 3px 0px $dark-green, 7px 7px 0px $dark-blue;
+}
+
+.intro-text-1 {
+  font-family: 'Cookie', serif;
+  font-size: 6em;
+  line-height: 0.875em;
+  display: block;
+
+  @include breakpoint($small) {
+    font-size: 6.5em;
+    display: inline;
+  }
+}
+
+.intro-text-2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3em;
+  line-height: 1.5em;
+
+  @include breakpoint($small) {
+    font-size: 4em;
+  }
+}
+
+.and-block {
+  display: inline-block;
+  font-size: 2.25em;
+  line-height: 1.4em;
+  transform: skew(0,-5deg);
+  position: relative;
+  margin-top:30px;
+  margin-bottom:30px;
+
+  @include breakpoint($small) {
+    margin: 60px 0 45px 0;
+    font-size: 2.75em;
+    line-height: 1.5em;
+  }
+}
+
+.intro-text-3 {
+  border-top: 3px solid $gray;
+  border-bottom: 3px solid $gray;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.intro-text-4 {
+  font-family: 'Cookie', serif;
+  font-size: 4em;
+  line-height: 1.2em;
+  display: block;
+
+  @include breakpoint($small) {
+    font-size: 5em;
+    display: inline;
+  }
+}
+
+.intro-text-5 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+
+  @include breakpoint($small) {
+    font-size: 4em;
+    text-transform: none;
+  }
+}
+
+
+// Section Title
+
 .section-title {
   font-size: 3.75em;
   font-weight: 700;
@@ -7,4 +89,3 @@
   text-shadow: 1px 1px 0px $gray, 2px 2px 0px $light-blue;
   font-weight: normal;
 }
-

@@ -1,3 +1,9 @@
+<?php
+/**
+ * Template Name: Home Template
+ */
+?>
+
 <!-- INTRO -->
 <section id="intro"> 
   <div class="shadow">
@@ -23,7 +29,7 @@
       <span class="skill-badge icon icon-brush"></span>
       <h3>Design</h3>
       <ul class="skill-list">
-        <li>Illustrator</li>
+        <li>Adobe Illustrator</li>
         <li>Clean &amp; Modern</li>
         <li>Logo Design</li>
         <li>UI / UX</li>
@@ -96,18 +102,12 @@
 <!-- CONTACT -->
 <section id="contact">
   <a name="contact"></a>
-  <h2 class="section-title">Say Hi</h2>
+  <h2 class="section-title">Let&rsquo;s Work Together</h2>
   <form action="//formspree.io/groques360@gmail.com"
     method="POST">
     <input class="name" placeholder="Name" type="text" name="name">
     <input class="email" placeholder="E-Mail" type="email" name="_replyto">
-    <textarea class="message" name="message" rows="5" placeholder="A brief message"></textarea>
+    <textarea class="message" name="message" rows="6" placeholder="A brief message"></textarea>
     <input class="btn" type="submit" value="Send">
   </form>
 </section>
-
-<!--FOOTER-->
-<a href="#top" class="back-to-top"><span class="icon icon-chevron-up"></span></a>
-<footer>
-  <p class="copyright">&copy; 2015 G Roques</p>
-</footer>

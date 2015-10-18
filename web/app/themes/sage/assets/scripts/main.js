@@ -20,6 +20,31 @@
       init: function() {
         // JavaScript to be fired on all pages
 
+        // Smooth scroll for anchor links
+        var $root = $('html, body');
+        $('a').click(function() {
+          $root.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 500);
+          return false;
+        });
+        
+        // Hover function for work showcase
+        $(".frame").mouseenter(
+          function() {
+            $(".frame").not(this).stop(true, true).fadeTo(0, 0.4);
+            $(this).stop(true, true).fadeTo(0, 1);
+            $(this).css("box-shadow", "0 3px 6px rgba(0, 0, 0, 0.4)");
+          }
+        );
+        $(".frame").mouseleave(function(){
+          $(this).css("box-shadow", "0 2px 3px rgba(0, 0, 0, 0.3");
+        })
+        $("#work").mouseleave(function() {
+            $(".frame").fadeTo(0, 1);
+          }
+        );
+
         /**
          * Cache variables
          */
@@ -88,31 +113,6 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
-
-        // Hover function for work showcase
-        $(".frame").mouseenter(
-          function() {
-            $(".frame").not(this).stop(true, true).fadeTo(0, 0.4);
-            $(this).stop(true, true).fadeTo(0, 1);
-            $(this).css("box-shadow", "0 3px 6px rgba(0, 0, 0, 0.4)");
-          }
-        );
-        $(".frame").mouseleave(function(){
-          $(this).css("box-shadow", "0 2px 3px rgba(0, 0, 0, 0.3");
-        })
-        $("#work").mouseleave(function() {
-            $(".frame").fadeTo(0, 1);
-          }
-        );
-
-        // Smooth scroll for anchor links
-        var $root = $('html, body');
-        $('a').click(function() {
-          $root.animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-          }, 500);
-          return false;
-        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
