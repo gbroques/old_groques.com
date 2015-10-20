@@ -94,8 +94,8 @@
     </div>
   </div>
   <div class="social-icons-container">
-    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-github"></a>
-    <a target="blank" href="https://www.linkedin.com/in/gbroques" class="social-icon icon icon-linkedin"></a>
+    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-github2"></a>
+    <a target="blank" href="https://www.linkedin.com/in/gbroques" class="social-icon icon icon-linkedin2"></a>
   </div>
 </section>
 
