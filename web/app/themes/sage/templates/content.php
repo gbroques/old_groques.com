@@ -9,6 +9,5 @@
 		<div class="post-content">
 			<?php the_excerpt(); ?>
 		</div>
-		<a href="<?php the_permalink(); ?>" class="read-more">Continue Reading...</a>
 	</article>
 </div>
