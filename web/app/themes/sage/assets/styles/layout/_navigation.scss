@@ -1,28 +1,33 @@
 
+// Navigation
+//~~~~~~~~~~~~~~
+
+// Pull out common elements from header and footer nav
+
 // Header Navigation
 //~~~~~~~~~~~~~~~~~~~~~
 
-.nav {
+.header-nav {
   display: none;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   float: right;
   line-height: 80px;
-  
+
   @include breakpoint($large) {
     display: inline-block;
   }
-}
 
-.nav li {
-  display: inline-block;
-}
+  &-link {
+    padding: 6px 13px;
+    margin-right: 50px;
+    font-size: 0.9375rem;
 
-.nav a {
-  padding: 6px 13px;
-  margin-right: 50px;
-  font-size: 0.9375rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .cta {
@@ -76,4 +81,44 @@
 .standout {
   background-color: $dark-gray;
   border-left: 5px solid $dark-blue;
+}
+
+
+// Footer Navigation
+//~~~~~~~~~~~~~~~~~~~~~
+
+.footer-nav {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding: 40px 0 30px;
+
+  @include breakpoint($large) {
+    padding: 0;
+  }
+  
+  &-link {
+    display: inline-block;
+    padding: 0 5px;
+    margin-right: 5px;
+    font-size: 0.875rem;
+    color: $dark-silver;
+
+    &:visited {
+      color: $dark-silver;
+    }
+
+    &:hover {
+      color: $silver;
+    }
+
+    @include breakpoint(480px) {
+      font-size: 0.9375em;
+      padding: 0 13px;
+      margin-right: 20px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

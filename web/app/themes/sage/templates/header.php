@@ -2,39 +2,39 @@
 
 <!-- HEADER -->
 <header>
-  <div class="header-container">
-    <a class="logo" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    <ul class="nav">
+  <div class="wrapper">
+    <a class="logo header-logo" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <div class="header-nav nav">
     <?php if ( is_front_page() && is_home() ) { ?>
       <!-- Default homepage -->
-      <li class="nav__item"><a href="#skills">Skills</a></li>
-      <li class="nav__item"><a href="#work">Work</a></li>
-      <li class="nav__item"><a href="#about">About</a></li>
-      <li class="nav__item"><a href="#contact">Contact</a></li>
-      <li class="nav__item"><a class="cta" href="<?= esc_url(home_url('/blog')); ?>">Blog</a></li>
+      <a class="header-nav-link" href="#skills">Skills</a>
+      <a class="header-nav-link" href="#work">Work</a>
+      <a class="header-nav-link" href="#about">About</a>
+      <a class="header-nav-link" href="#contact">Contact</a>
+      <a class="header-nav-link cta" href="<?= esc_url(home_url('/blog')); ?>">Blog</a>
     <?php } elseif ( is_front_page() ) { ?>
       <!-- Static homepage -->
-      <li class="nav__item"><a href="#skills">Skills</a></li>
-      <li class="nav__item"><a href="#work">Work</a></li>
-      <li class="nav__item"><a href="#about">About</a></li>
-      <li class="nav__item"><a href="#contact">Contact</a></li>
-      <li class="nav__item"><a class="cta" href="<?= esc_url(home_url('/blog')); ?>">Blog</a></li>
+      <a class="header-nav-link" href="#skills">Skills</a>
+      <a class="header-nav-link" href="#work">Work</a>
+      <a class="header-nav-link" href="#about">About</a>
+      <a class="header-nav-link" href="#contact">Contact</a>
+      <a class="header-nav-link cta" href="<?= esc_url(home_url('/blog')); ?>">Blog</a>
     <?php } elseif ( is_home() ) { ?>
       <!-- Blog page -->
-      <li class="nav__item"><a href="<?= esc_url(home_url('/')); ?>html-css">HTML &amp; CSS</a></li>
-      <li class="nav__item"><a href="<?= esc_url(home_url('/')); ?>javascript">Javascript</a></li>
-      <li class="nav__item"><a href="<?= esc_url(home_url('/')); ?>php">PHP</a></li>
-      <li class="nav__item"><a href="<?= esc_url(home_url('/')); ?>design">Design</a></li>
-      <li class="nav__item"><a class="cta" href="<?= esc_url(home_url('/blog')); ?>">Recent</a></li>
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>html-css">HTML &amp; CSS</a>
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>javascript">Javascript</a>
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>php">PHP</a>
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>design">Design</a>
+      <a class="header-nav-link cta" href="<?= esc_url(home_url('/blog')); ?>">Recent</a>
     <?php } else { ?>
       <!-- Everything else -->
-      <li class="nav__item"><a href="<?= esc_url(home_url('/')); ?>html-css">HTML &amp; CSS</a></li>
-      <li class="nav__item"><a href="<?= esc_url(home_url('/')); ?>javascript">Javascript</a></li>
-      <li class="nav__item"><a href="<?= esc_url(home_url('/')); ?>php">PHP</a></li>
-      <li class="nav__item"><a href="<?= esc_url(home_url('/')); ?>design">Design</a></li>
-      <li class="nav__item"><a class="cta" href="<?= esc_url(home_url('/blog')); ?>">Recent</a></li>
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>html-css">HTML &amp; CSS</a>
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>javascript">Javascript</a>
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>php">PHP</a>
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>design">Design</a>
+      <a class="header-nav-link cta" href="<?= esc_url(home_url('/blog')); ?>">Recent</a>
     <?php } ?>
-    </ul>
+    </div>
     <div class="hamburger-menu">
       <span></span>
       <span></span>

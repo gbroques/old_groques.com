@@ -7,19 +7,14 @@ header {
   height: 80px;
 }
 
-.header-container {
+.wrapper {
+  padding: 0 5%;
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
+  overflow: auto;
 }
 
-.logo {
-  font-size: 2em;
-  font-family: 'Leckerli One', serif;
+.header-logo {
   line-height: 80px;
-  margin-left: 5%;
-
-  @include breakpoint($large) {
-    margin-left: 50px;
-  }
 }

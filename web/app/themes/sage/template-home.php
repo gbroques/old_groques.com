@@ -93,9 +93,11 @@
       <p>I'm a self-taught web designer and developer based in St. Louis. When I'm not coding you can find me surfing the web for new music.</p>
     </div>
   </div>
-  <div class="social-icons-container">
-    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-github2"></a>
-    <a target="blank" href="https://www.linkedin.com/in/gbroques" class="social-icon icon icon-linkedin2"></a>
+  <div class="about-social-icons-container">
+    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-github"></a>
+    <a target="blank" href="https://www.linkedin.com/in/gbroques" class="social-icon icon icon-linkedin"></a>
+    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-google-plus"></a>
+    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-twitter"></a>
   </div>
 </section>
 

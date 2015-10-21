@@ -1,0 +1,53 @@
+.social-icon {
+  transition: 250ms ease-in-out;
+  font-size: 1.5em;
+  margin-right: 30px;
+
+  @include breakpoint(400px) {
+    font-size: 1.75em;
+    margin-right: 50px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.about-social-icons-container {
+  margin: 80px auto 0;
+
+  & .social-icon {
+    color: $dark-gray;
+    
+    &:visited {
+      color: $dark-gray;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.footer-social-icons-container {
+  display: inline-block;
+  padding-bottom: 40px;
+
+  @include breakpoint($large) {
+    padding-bottom: 0px;
+    float: right;
+  }
+
+  & .social-icon {
+    color: $dark-silver;
+    font-size: 1.5em;
+
+    &:visited {
+      color: $dark-silver;
+    }
+
+    &:hover {
+      color: $silver;
+    }
+  }
+}
