@@ -108,7 +108,7 @@
     }
 
     &:hover {
-      color: $silver;
+      color: $darkest-silver;
     }
 
     @include breakpoint(480px) {

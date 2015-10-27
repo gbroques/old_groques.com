@@ -26,6 +26,26 @@
   }
 }
 
+// Read More Button
+//~~~~~~~~~~~~~~~~~~~
+
+.read-more {
+  background-color: $light-green;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 6px;
+  transition: 300ms ease-in-out;
+  
+  &:hover {
+    background-color: $dark-green;
+    color: #fff;
+  }
+}
+
 
 // Back to Top Button
 //~~~~~~~~~~~~~~~~~~~~~

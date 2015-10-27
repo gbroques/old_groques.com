@@ -27,7 +27,7 @@ footer {
 	font-size: 1.625em;
 
 	&:hover {
-		color: $silver;
+    color: $darkest-silver;
 	}
 
 	@include breakpoint($large) {

@@ -1,36 +1,27 @@
-//==============
-// BLOG
-//==============
-
-.wrap {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.post-container {
-  max-width: 540px;
-  padding: 0 15px;
-  text-align: left;
+.post {
   margin: 2rem auto 4rem;
 
   @include breakpoint($small) {
-    max-width: 650px;
-    padding: 0 30px;
     margin: 2.75rem auto 4.5rem;
   }
 
   @include breakpoint($large) {
-    margin: 3rem 5% 5.5rem auto;
+    margin: 3rem auto 5.5rem;
   }
+
 }
 
 .post-title {
   display: inline-block;
   font-family: 'Nunito', sans-serif;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: bold;
   line-height: 1.5;
   margin-bottom: 7px;
+
+  @include breakpoint($small) {
+    font-size: 2.25rem;
+  }
 
   @include breakpoint($large) {
     font-size: 2.5rem;
@@ -90,36 +81,6 @@ a[rel~="category"] {
   margin-left: 7px;
 }
 
-.post-content {
-  font: 1.05rem/1.8 "Open Sans",sans-serif;
-
-  @include breakpoint($small) {
-    font-size: 1.125rem;
-  }
-}
-
-h1 {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.post-content p {
+.content-container p {
   margin-bottom: 2rem;
-}
-
-.read-more {
-  background-color: $light-green;
-  color: #fff;
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.875rem;
-  border-radius: 5px;
-  padding: 10px 20px;
-  display: inline-block;
-  margin-top: 6px;
-  
-  &:hover {
-    background-color: $dark-green;
-    color: #fff;
-  }
 }

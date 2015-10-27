@@ -21,6 +21,7 @@ $gray: #ecf0f1;
 $dark-gray: darken($gray, 6%);
 $silver: #95a5a6;
 $dark-silver: #7f8c8d;
+$darkest-silver: mix(black, $dark-silver, 15%);
 
 // Blue
 $dark-blue: #2C3E50;

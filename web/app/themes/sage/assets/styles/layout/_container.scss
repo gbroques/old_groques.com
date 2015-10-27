@@ -1,0 +1,27 @@
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.content-container {
+  max-width: 540px;
+  padding: 0 15px;
+  margin: 2rem auto 4rem;
+
+  @include breakpoint($small) {
+    max-width: 650px;
+    padding: 0 30px;
+    margin: 2.75rem auto 4.5rem;
+  }
+
+  @include breakpoint($large) {
+    margin: 3rem 5% 5.5rem auto;
+  }
+}
+
+@include breakpoint($large) {
+	.work-container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

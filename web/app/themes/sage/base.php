@@ -26,16 +26,14 @@ use Roots\Sage\Wrapper;
       <!-- Static homepage -->
       <?php include Wrapper\template_path(); ?>
     <?php } elseif ( is_home() ) { ?>
-      <!-- // blog page -->
       <!-- BLOG -->
       <div class="wrap">
-      <?php include Wrapper\template_path(); ?>
+        <?php include Wrapper\template_path(); ?>
       </div>
     <?php } else { ?>
-      <!-- //everything else -->
-      <!-- BLOG -->
+      <!-- Everything else -->
       <div class="wrap">
-      <?php include Wrapper\template_path(); ?>
+        <?php include Wrapper\template_path(); ?>
       </div>
     <?php } ?>
     <?php
