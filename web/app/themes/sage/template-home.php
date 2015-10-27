@@ -72,7 +72,7 @@
     <div class="large-12 columns">
 
       <div class="frame">
-        <a href="http://vendingurway.com" target="blank">
+        <a href="<?= esc_url(home_url('/work/vending-ur-way')); ?>">
           <img src="<?= get_template_directory_uri(); ?>/dist/images/vuw-thumbnail.svg" alt="Vending Ur Way">
           <p class="caption">Vending Ur Way</p>
         </a>
