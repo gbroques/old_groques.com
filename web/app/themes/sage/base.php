@@ -28,7 +28,9 @@ use Roots\Sage\Wrapper;
     <?php } elseif ( is_home() ) { ?>
       <!-- BLOG -->
       <div class="wrap">
-        <?php include Wrapper\template_path(); ?>
+        <div class="content-container">
+          <?php include Wrapper\template_path(); ?>
+        </div>
       </div>
     <?php } else { ?>
       <!-- Everything else -->
