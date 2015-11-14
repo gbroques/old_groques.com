@@ -19,6 +19,12 @@
       <a class="header-nav-link" href="#about">About</a>
       <a class="header-nav-link" href="#contact">Contact</a>
       <a class="header-nav-link cta" href="<?= esc_url(home_url('/blog')); ?>">Blog</a>
+    <?php } elseif ( is_page_template( 'template-work.php' ) ) { ?>
+    <!-- Portfolio pages -->
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>work">Work</a>
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>about">About</a>
+      <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>">Contact</a>
+      <a class="header-nav-link cta" href="<?= esc_url(home_url('/blog')); ?>">Blog</a>
     <?php } elseif ( is_home() ) { ?>
       <!-- Blog page -->
       <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>html-css">HTML &amp; CSS</a>

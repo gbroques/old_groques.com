@@ -15,6 +15,12 @@
 	  <li class="mobile-nav-list__item"><a class="mobile-nav-link" href="#about">About</a></li>
 	  <li class="mobile-nav-list__item"><a class="mobile-nav-link" href="#contact">Contact</a></li>
 	  <li class="mobile-nav-list__item"><a class="mobile-nav-link standout" href="<?= esc_url(home_url('/blog')); ?>">Blog</a></li>
+  <?php } elseif ( is_page_template( 'template-work.php' ) ) { ?>
+    <!-- Portfolio pages -->
+		<li class="mobile-nav-list__item"><a class="mobile-nav-link" href="<?= esc_url(home_url('/')); ?>work">Work</a></li>
+		<li class="mobile-nav-list__item"><a class="mobile-nav-link" href="<?= esc_url(home_url('/')); ?>about">About</a></li>
+		<li class="mobile-nav-list__item"><a class="mobile-nav-link" href="<?= esc_url(home_url('/')); ?>">Contact</a></li>
+		<li class="mobile-nav-list__item"><a class="mobile-nav-link standout" href="<?= esc_url(home_url('/blog')); ?>">Blog</a></li>
 	<?php } elseif ( is_home() ) { ?>
 	  <!-- Blog page -->
 	  <li class="mobile-nav-list__item"><a class="mobile-nav-link" href="<?= esc_url(home_url('/')); ?>html-css">HTML &amp; CSS</a></li>
