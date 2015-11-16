@@ -1,3 +1,12 @@
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+  float: right;
+}
+
 // Content
 
 .content-container {
@@ -14,6 +23,32 @@ h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.work-page-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-bottom: 1px solid $silver;
+  padding-bottom: 10px;
+  margin-bottom: 2px;
+
+  @include breakpoint($small) {
+    font-size: 1.75rem;
+  }
+}
+
+.work-sub-title {
+  font-family: 'Open Sans', sans-serif;
+  color: $silver;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  display: inline-block;
+
+  @include breakpoint($small) {
+    font-size: 1.125rem;
+  }
 }
 
 // Logo
