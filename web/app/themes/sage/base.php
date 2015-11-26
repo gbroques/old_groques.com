@@ -28,7 +28,7 @@ use Roots\Sage\Wrapper;
     <?php } elseif ( is_home() ) { ?>
       <!-- BLOG -->
       <div class="wrap">
-        <div class="content-container">
+        <div class="content-container max-width-container">
           <?php include Wrapper\template_path(); ?>
         </div>
       </div>

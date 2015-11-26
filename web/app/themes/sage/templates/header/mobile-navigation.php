@@ -15,7 +15,7 @@
 	  <li class="mobile-nav-list__item"><a class="mobile-nav-link" href="#about">About</a></li>
 	  <li class="mobile-nav-list__item"><a class="mobile-nav-link" href="#contact">Contact</a></li>
 	  <li class="mobile-nav-list__item"><a class="mobile-nav-link standout" href="<?= esc_url(home_url('/blog')); ?>">Blog</a></li>
-  <?php } elseif ( is_page_template( 'template-work.php' ) ) { ?>
+  <?php } elseif ( is_page_template( 'template-case-study.php' ) || is_page_template( 'template-page.php' ) ) { ?>
     <!-- Portfolio pages -->
 		<li class="mobile-nav-list__item"><a class="mobile-nav-link" href="<?= esc_url(home_url('/')); ?>work">Work</a></li>
 		<li class="mobile-nav-list__item"><a class="mobile-nav-link" href="<?= esc_url(home_url('/')); ?>about">About</a></li>
