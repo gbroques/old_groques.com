@@ -19,7 +19,7 @@
       <a class="header-nav-link" href="#about">About</a>
       <a class="header-nav-link" href="#contact">Contact</a>
       <a class="header-nav-link cta" href="<?= esc_url(home_url('/blog')); ?>">Blog</a>
-    <?php } elseif ( is_page_template( 'template-case-study.php' ) || is_page_template( 'template-about.php' ) || is_page_template( 'template-contact.php' ) ) { ?>
+    <?php } elseif ( is_page_template( 'template-case-study.php' ) || is_page_template( 'template-page.php' ) ) { ?>
     <!-- Portfolio pages -->
       <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>work">Work</a>
       <a class="header-nav-link" href="<?= esc_url(home_url('/')); ?>about">About</a>

@@ -79,7 +79,7 @@
       </div>
     
     </div>
-    <div class="large-4 columns">
+
 </section>
 
 <!-- ABOUT -->
@@ -90,7 +90,7 @@
       <img class="headshot" src="<?= get_template_directory_uri(); ?>/dist/images/headshot.jpeg" alt="G Roques">
     </div>
     <div>
-      <p>I'm a self-taught web designer and developer based in St. Louis. When I'm not coding you can find me surfing the web for new music.</p>
+      <p class="about-text">I'm a self-taught web designer and developer based in St. Louis. When I'm not coding you can find me surfing the web for new music.</p>
     </div>
   </div>
   <div class="about-social-icons-container">

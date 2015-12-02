@@ -1,0 +1,46 @@
+//========
+// WORK
+//========
+
+#work {
+  padding: 40px 0;
+  background: linear-gradient(to bottom right, $light-green 30%, $dark-green 70%);
+  
+  h2 {
+    text-shadow: 1px 1px 0px $dark-green, 2px 2px 0px $gray;
+    margin-bottom: 55px;
+  }
+
+  @include breakpoint($large) {
+    padding: 55px 0;
+  }
+}
+
+.frame {
+  border-radius: 6px;
+  border-bottom: 1px solid #ccc;
+  background-color: $off-white;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 100px;
+  width: 90%;
+  max-width: 375px; // Ratio 16:9 375x211
+  transition: 300ms ease;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.frame img {
+  border-radius: 6px 6px 0 0;
+}
+
+.caption {
+  color: $light-blue;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 18px 0;
+  font-size: 1.125em;
+  border-radius: 0 0 6px 6px;
+}

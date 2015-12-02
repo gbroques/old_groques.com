@@ -1,5 +1,57 @@
-.about-portrait {
-	max-width: 150px;
-	float: left;
-	margin-right: 50px;
+//==========
+// ABOUT
+//==========
+
+#about {
+  background: linear-gradient(to bottom right, $dark-blue 30%, $darker-blue 70%);
+  color: $dark-gray;
+  padding: 100px 0;
+
+  @include breakpoint($large) {
+    padding: 150px 0;
+  }
+
+  & .social-icon  {
+    color: $dark-gray;
+    
+    &:visited {
+      color: $dark-gray;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+}
+
+.about-container {
+  width: 80%;
+  max-width: 495px;
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+
+  @include breakpoint($large) {
+    max-width: 600px;
+    font-size: 1.25rem;
+  }  
+}
+
+.portrait {
+  max-width: 150px;
+  margin: 0 auto 40px;
+
+  @include breakpoint($small) {
+    max-width: 90px;
+    margin-right: 5%;
+    margin-bottom: 0px;
+    float: left;
+  }
+
+  @include breakpoint($large) {
+    max-width: 105px;
+  }
+}
+
+.headshot {
+  border-radius: 50%;
 }

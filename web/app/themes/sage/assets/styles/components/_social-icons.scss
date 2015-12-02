@@ -15,18 +15,6 @@
 
 .about-social-icons-container {
   margin: 80px auto 0;
-
-  & .social-icon {
-    color: $dark-gray;
-    
-    &:visited {
-      color: $dark-gray;
-    }
-
-    &:hover {
-      color: #fff;
-    }
-  }
 }
 
 .footer-social-icons-container {
