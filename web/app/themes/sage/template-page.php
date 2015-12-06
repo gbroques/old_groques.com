@@ -27,15 +27,14 @@
     <div class="portrait">
       <img class="headshot" src="<?= get_template_directory_uri(); ?>/dist/images/headshot.jpeg" alt="G Roques">
     </div>
-    <div>
-      <p class="about-text">I'm a self-taught web designer and developer based in St. Louis. When I'm not coding you can find me surfing the web for new music.</p>
-    </div>
-  </div>
-  <div class="about-social-icons-container center">
-    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-github"></a>
-    <a target="blank" href="https://www.linkedin.com/in/gbroques" class="social-icon icon icon-linkedin"></a>
-    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-google-plus"></a>
-    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-twitter"></a>
+    <p class="about-text">I'm a self-taught web designer and developer based in St. Louis. When I'm not coding you can find me surfing the web for new music.</p>
+
+	  <div class="about-social-icons-container center">
+	    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-github"></a>
+	    <a target="blank" href="https://www.linkedin.com/in/gbroques" class="social-icon icon icon-linkedin"></a>
+	    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-google-plus"></a>
+	    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-twitter"></a>
+	  </div>
   </div>
 
 	<?php } elseif ( is_page ( 'contact' ) ) { ?> 

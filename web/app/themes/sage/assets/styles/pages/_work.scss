@@ -3,16 +3,11 @@
 //========
 
 #work {
-  padding: 40px 0;
   background: linear-gradient(to bottom right, $light-green 30%, $dark-green 70%);
   
   h2 {
     text-shadow: 1px 1px 0px $dark-green, 2px 2px 0px $gray;
     margin-bottom: 55px;
-  }
-
-  @include breakpoint($large) {
-    padding: 55px 0;
   }
 }
 

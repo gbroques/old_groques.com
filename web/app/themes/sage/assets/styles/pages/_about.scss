@@ -3,17 +3,13 @@
 //==========
 
 #about {
+  padding-top: 75px; // magic number
   background: linear-gradient(to bottom right, $dark-blue 30%, $darker-blue 70%);
   color: $dark-gray;
-  padding: 100px 0;
 
-  @include breakpoint($large) {
-    padding: 150px 0;
-  }
-
-  & .social-icon  {
+  & a {
     color: $dark-gray;
-    
+
     &:visited {
       color: $dark-gray;
     }
@@ -21,18 +17,24 @@
     &:hover {
       color: #fff;
     }
+  }
+
+  @include breakpoint($large) {
+    padding-top: 125px;
+  }
 }
 
 .about-container {
   width: 80%;
+  padding-top: 25px;
+  padding-bottom: 100px;
   max-width: 495px;
-  text-align: left;
   display: block;
   margin: 0 auto;
 
   @include breakpoint($large) {
     max-width: 600px;
-    font-size: 1.25rem;
+    padding-bottom: 150px;
   }  
 }
 

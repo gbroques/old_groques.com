@@ -1,37 +1,10 @@
-// Section Title
-
-.section-title {
-  font-size: 3.75em;
-  font-weight: 700;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-family: 'Leckerli One', serif;
-  text-shadow: 1px 1px 0px $gray, 2px 2px 0px $light-blue;
-  font-weight: normal;
-}
-
-
-//========
-// INTRO
-//========
-
-#intro {
-  background: linear-gradient(to bottom right, $light-green 30%, $dark-green 70%);
-  color: $dark-blue;
-  padding: 60px 0;
-
-  @include breakpoint($large) {
-    padding: 85px 0;
-  }
-}
-
-
 //==========
 // SKILLS
 //==========
 
 #skills {
-  padding: 40px 0;
+  background-color: #000;
+  color: #fff;
 }
 
 h3 {

@@ -51,6 +51,7 @@ h1 {
   }
 }
 
+
 // Logo
 
 .logo {
@@ -58,23 +59,35 @@ h1 {
   font-family: 'Leckerli One', serif;
 }
 
+
+// Section Title
+
+.section-title {
+  font-size: 3.75em;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding-top: 45px;
+  margin-bottom: 35px;
+  font-family: 'Leckerli One', serif;
+  text-shadow: 1px 1px 0px $gray, 2px 2px 0px $light-blue;
+}
+
+
 // Intro Text
 //~~~~~~~~~~~~~~
 
 .shadow {
   color: $gray;
-  text-shadow: 3px 3px 0px $dark-green, 7px 7px 0px $dark-blue;
+  text-shadow: 3px 3px 0px #780206, 7px 7px 0px #061161;
 }
 
 .intro-text-1 {
   font-family: 'Cookie', serif;
   font-size: 6em;
   line-height: 0.875em;
-  display: block;
 
   @include breakpoint($small) {
     font-size: 6.5em;
-    display: inline;
   }
 }
 
@@ -90,16 +103,16 @@ h1 {
 
 .and-block {
   display: inline-block;
-  font-size: 2.25em;
+  font-size: 1.5em;
   line-height: 1.4em;
   transform: skew(0,-5deg);
   position: relative;
-  margin-top:30px;
-  margin-bottom:30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   @include breakpoint($small) {
-    margin: 60px 0 45px 0;
-    font-size: 2.75em;
+    margin: 50px 0 35px 0;
+    font-size: 2em;
     line-height: 1.5em;
   }
 }
@@ -136,11 +149,25 @@ h1 {
   }
 }
 
-// About Text
+// Contact Page Text
+
+.page-id-16 p {
+  line-height: 1.6;
+  font-size: 1.125rem;
+  text-align: left;
+
+  @include breakpoint($large) {
+    line-height: 1.7;
+    font-size: 1.375rem;
+  }
+}
+
+// About Text 
 
 .about-text {
   line-height: 1.6;
   font-size: 1.125rem;
+  text-align: left;
 
   @include breakpoint($large) {
     line-height: 1.7;

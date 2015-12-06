@@ -4,21 +4,6 @@
  */
 ?>
 
-<!-- INTRO -->
-<section id="intro"> 
-  <div class="shadow">
-    <span class="intro-text-1">Hello! </span>
-    <span class="intro-text-2">My name's G</span>
-  </div>
-  <div class="and-block">
-    <div class="shadow intro-text-3">and I'm a</div> 
-  </div>
-  <div class="shadow">
-    <span class="intro-text-4">Designer &amp; </span>
-    <span class="intro-text-5">Developer</span>
-  </div>
-</section>
-
 <!-- SKILLS -->
 <section id="skills">
   <h2 class="section-title">My skills</h2>
@@ -92,12 +77,13 @@
     <div>
       <p class="about-text">I'm a self-taught web designer and developer based in St. Louis. When I'm not coding you can find me surfing the web for new music.</p>
     </div>
-  </div>
-  <div class="about-social-icons-container">
-    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-github"></a>
-    <a target="blank" href="https://www.linkedin.com/in/gbroques" class="social-icon icon icon-linkedin"></a>
-    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-google-plus"></a>
-    <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-twitter"></a>
+
+      <div class="about-social-icons-container">
+      <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-github"></a>
+      <a target="blank" href="https://www.linkedin.com/in/gbroques" class="social-icon icon icon-linkedin"></a>
+      <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-google-plus"></a>
+      <a target="blank" href="https://github.com/gbroques" class="social-icon icon icon-twitter"></a>
+    </div>
   </div>
 </section>
 
