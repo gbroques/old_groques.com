@@ -4,6 +4,22 @@
  */
 ?>
 
+<!-- INTRO -->
+<section id="intro"> 
+  <div class="shadow">
+    <span class="intro-text-1">Hello! </span>
+    <span class="intro-text-2">My name's G</span>
+  </div>
+  <div class="and-block">
+    <div class="shadow intro-text-3">and I'm a</div> 
+  </div>
+  <div class="shadow">
+    <span class="intro-text-4">Designer &amp; </span>
+    <span class="intro-text-5">Developer</span>
+  </div>
+</section>
+
+
 <!-- SKILLS -->
 <section id="skills">
   <h2 class="section-title">My skills</h2>

@@ -4,16 +4,11 @@
 //========
 
 #intro {
-	background: url('../images/bg.jpg') no-repeat center center;
-	color: $dark-blue;
-}
-
-.intro-text-container {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  background: linear-gradient(to bottom right, $light-green 30%, $dark-green 70%);
+  color: $dark-blue;
+	padding: 60px 0;
 
   @include breakpoint($large) {
-	  padding-top: 60px;
-	  padding-bottom: 280px;
+    padding: 85px 0;
   }
 }
