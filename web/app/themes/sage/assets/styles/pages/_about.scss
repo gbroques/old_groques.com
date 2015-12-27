@@ -27,14 +27,14 @@
 .about-container {
   width: 80%;
   padding-top: 25px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   max-width: 495px;
   display: block;
   margin: 0 auto;
 
   @include breakpoint($large) {
     max-width: 600px;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
   }  
 }
 
