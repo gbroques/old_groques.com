@@ -39,7 +39,7 @@
         );
         $(".frame").mouseleave(function(){
           $(this).css("box-shadow", "0 2px 3px rgba(0, 0, 0, 0.3");
-        })
+        });
         $("#work").mouseleave(function() {
             $(".frame").fadeTo(0, 1);
           }
