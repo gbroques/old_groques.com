@@ -76,7 +76,7 @@
           links[i].addEventListener("click", function() {
             deactivateMenu();
           });
-        };
+        }
 
         /**
          * Listen for clicks on the mask, which should close the menu

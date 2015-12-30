@@ -59,9 +59,9 @@ var enabled = {
   // Fail styles task on error when `--production`
   failStyleTask: argv.production,
   // Fail due to JSHint warnings only when `--production`
-  failJSHint: argv.production,
+  // failJSHint: argv.production,
   // Strip debug statments from javascript when `--production`
-  stripJSDebug: argv.production
+  // stripJSDebug: argv.production
 };
 
 // Path to the compiled assets manifest in the dist directory
