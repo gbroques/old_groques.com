@@ -86,6 +86,7 @@
 <!-- ABOUT -->
 <section id="about">
   <a name="about"></a>
+  <h2 class="section-title">About</h2>
   <div class="about-container">
     <div class="portrait">
       <img class="headshot" src="<?= get_template_directory_uri(); ?>/dist/images/headshot.jpeg" alt="G Roques">
