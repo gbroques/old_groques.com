@@ -25,7 +25,6 @@ use Roots\Sage\Wrapper;
       <?php include Wrapper\template_path(); ?>
     <?php } elseif ( is_front_page() ) { ?>
       <!-- Static homepage -->
-
       <?php include Wrapper\template_path(); ?>
     <?php } elseif ( is_home() ) { ?>
       <!-- BLOG -->
@@ -34,10 +33,16 @@ use Roots\Sage\Wrapper;
           <?php include Wrapper\template_path(); ?>
         </div>
       </div>
+    <?php } elseif ( is_page_template( 'template-page.php' ) ) { ?>
+      <div class="wrap">
+        <?php include Wrapper\template_path(); ?>
+      </div>
     <?php } else { ?>
       <!-- Everything else -->
       <div class="wrap">
-        <?php include Wrapper\template_path(); ?>
+        <div class="content-container max-width-container">
+          <?php include Wrapper\template_path(); ?>
+        </div>
       </div>
     <?php } ?>
     <?php
