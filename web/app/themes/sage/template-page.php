@@ -42,9 +42,12 @@
 		<!-- CONTACT -->
 
 		<!-- Column 1 -->
-		<div class="large-6 columns">
-			<?php get_template_part('templates/content', 'page'); ?>
+		<div class="contact-container">
+			<div class="large-6 columns">
+				<?php get_template_part('templates/content', 'page'); ?>
+			</div>
 		</div>
+
 
 		<!-- Column 2 -->
 		<div class="large-6 columns">
